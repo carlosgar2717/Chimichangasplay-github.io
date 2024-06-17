@@ -1,0 +1,399 @@
+.filtro{
+	display: none;
+}
+
+
+.barra{
+	position: relative;
+	color: rgb(209, 157, 141);
+	font-size: 40px;
+	box-shadow: 0 10px 20px rgb(2, 126, 58);
+	top: -10px;
+	width: 100%;
+	border-radius: 30px;
+	transition: 0.8s all ease-in-out;
+ }
+
+ .barra:hover{
+	width: 100%;
+ }
+
+ .barra a{
+	color: rgb(255, 255, 255);
+	text-shadow: 0 5px 5px purple;
+ }
+
+details{
+	background-image: url("https://images.ecestaticos.com/leU_vr7vwdksdq_fkLknTvqTmlw=/0x90:1696x1041/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F4eb%2Fa77%2F5f9%2F4eba775f9bbe9f2f8c602b8731e81a46.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: 0.8s all ease-in-out;
+}
+
+details:hover{
+	color: rgb(82, 3, 3);
+}
+
+.coment{
+	position: fixed;
+   font-size: 40px;
+   top: 85%;
+   height: 70px;
+   width: 70px;
+}
+
+.coment h3{
+	background-color: rgba(255, 255, 0, 0.61);
+	position: fixed;
+   font-size: 20px;
+   top: 92%;
+
+}
+
+
+.busca{
+	margin-top: 10px;
+    width: 300px;
+    height: 100px;
+    align-content: center;
+    justify-content: center;
+	position: relative;
+}
+input{
+	border-radius: 20px;
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+.pool{
+    width: 40px; 
+    position: absolute;
+    filter: drop-shadow(3px 3px 3px red);
+    margin-left: 353px;
+	top: -5px;
+}
+
+
+@media (max-width:800px) {
+	input{
+		font-size: 25px;
+		margin-left: -75px;
+	}
+
+	.pool{
+		width: 40px; 
+		position: absolute;
+		filter: drop-shadow(3px 3px 3px red);
+		margin-left: 223px;
+		top: -5px;
+	}
+
+	.busca{
+		margin-left: 80px;
+	}
+	
+}
+
+
+
+
+video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: fixed;
+}
+.capa{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.3;
+	position: fixed;
+}
+
+h1{
+	position: relative;
+	text-shadow: 0 5px 20px blue;
+	font-family: Arial;
+}
+
+.trailers{
+ position: relative;
+ width: 100%;
+ border: solid 3px greenyellow;
+ border-radius: 20px;
+}
+
+.you{
+	border-radius: 20px;
+}
+
+
+.todo{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,
+		                            minmax(min(11.25rem,100%) , 1fr));
+	grid-gap: 1rem;
+}
+ 
+
+.cartas{
+	position: relative;
+	width: 150px;
+	height: 200px;
+	margin: 30px 20px 20px 30px ;
+	border-radius: 20px;
+	box-shadow: 0 5px 20px violet;
+	overflow: hidden;
+}
+
+.contenido{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: -100%;
+	position: absolute;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+	transition: 0.8s;
+}
+
+.imagen{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+
+	
+}
+
+.titulo{
+	font-size: 17px;
+ color: white;
+ padding: 8px;
+}
+
+.conten{
+	color: white;
+	font-size: 10px;
+	align-content: center;
+	margin: 6px;
+	font-family: arial;
+}
+
+
+.cartas:hover .contenido{
+	right: 0;
+}
+
+
+
+
+
+
+
+.cap1{
+	opacity: 0.10;
+   }
+   
+   .cap2{
+	   opacity: 0.10;
+   }
+   
+   .cap3{
+	   opacity: 0.10;
+   }
+   
+   .cap4{
+	   opacity: 0.10;
+   }
+   
+   .cap5{
+	   opacity: 0.10;
+   }
+   
+   .cap6{
+	   opacity: 0.10;
+   }
+
+   h3{
+	text-shadow: 0 5px 20px rgba(150, 0, 0, 0.884);
+	font-family: Arial;
+   }
+
+.tittle{
+	color: aliceblue;
+	opacity: 3.6;
+	transform: rotate(-50deg);
+	transition: 0.5s all ease-in-out;
+}
+
+
+a{
+	align-content: center;
+	text-decoration: none;
+}
+
+.box{
+	position: relative;
+	border: solid 3px black;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	background-color: black;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	position: center;
+	size: cover;
+}
+
+.cap1{
+	background-image: url("https://www.dodmagazine.es/wp-content/uploads/2022/01/mejores-peliculas-comedia-2022.jpg");
+	background-size: cover;
+	background-position: center;
+	 width: 30%;
+	 height: 100%;
+	 transition: 0.8s all ease-in-out;
+ }
+
+.cap2{
+   background-image: url("https://s1.eestatic.com/2020/06/10/series/cine/netflix-peliculas-cine_496711655_153519932_1706x960.jpg");
+   background-size: cover;
+   background-position: center;
+	width: 30%;
+	height: 100%;
+	transition: 0.8s all ease-in-out;
+}
+.cap3{
+   background-image: url("https://hips.hearstapps.com/hmg-prod/images/arrested-development-mejores-series-comedia-netflix-64b022057f992.jpeg?crop=1xw:1xh;center,top&resize=980:*");
+   background-size: cover;
+   background-position: center;
+	width: 30%;
+	height: 100%;
+	transition: 0.8s all ease-in-out;
+}
+
+	.cap4{
+   background-image: url("https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2021/06/Anime-Demon-Slayer.jpeg?fit=1200%2C1048&quality=55&strip=all&ssl=1");
+   background-size: cover;
+   background-position: center;
+	width: 30%;
+	height: 100%;
+	transition: 0.8s all ease-in-out;
+}
+
+.cap5{
+   background-image: url("https://hips.hearstapps.com/hmg-prod/images/terrifier-copia-1666710134.jpg");
+   background-size: cover;
+   background-position: center;
+	width: 30%;
+	height: 100%;
+	transition: 0.8s all ease-in-out;
+}
+
+.cap6{
+   background-image: url("https://images-1.rakuten.tv/storage/snapshot/shot/85e49fcd-5823-4d1d-9aba-4750075dee5b-snapshot-1590664624-width936-quality90.jpeg");
+   background-size: cover;
+   background-position: center;
+	width: 30%;
+	height: 100%;
+	transition: 0.8s all ease-in-out;
+}
+
+
+.cap1:hover{
+	width: 90%;
+	opacity: 3.6;
+	h3{
+	transform: rotate(0deg);
+}
+}
+
+.cap2:hover{
+	width: 90%;
+	opacity: 3.6;
+	h3{
+	transform: rotate(0deg);
+}
+}
+
+.cap3:hover{
+	width: 90%;
+	opacity: 3.6;
+	h3{
+	transform: rotate(0deg);
+}
+}
+
+.cap4:hover{
+	width: 90%;
+	opacity: 3.6;
+	h3{
+	transform: rotate(0deg);
+}
+}
+
+.cap5:hover{
+	width: 90%;
+	opacity: 3.6;
+	h3{
+	transform: rotate(0deg);
+}
+}
+
+.cap6:hover{
+	width: 90%;
+	opacity: 3.6;
+	h3{
+		transform: rotate(0deg);
+	}
+}
+
+
+@media (max-width:800px) {
+
+	.trailers{
+		height: 150px;
+	}
+
+	iframe{
+		height: 100%;
+	}
+
+	.cap1{
+		opacity: 0.7;
+	   }
+	   
+	   .cap2{
+		   opacity: 0.7;
+	   }
+	   
+	   .cap3{
+		   opacity: 0.7;
+	   }
+	   
+	   .cap4{
+		   opacity: 0.7;
+	   }
+	   
+	   .cap5{
+		   opacity: 0.7;
+	   }
+	   
+	   .cap6{
+		   opacity: 0.7;
+	   }
+
+
+	
+}
+

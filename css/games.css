@@ -1,0 +1,309 @@
+
+.filtro{
+	display: none;
+}
+
+.container{
+	position: absolute;
+	top: 80px;
+	transform: translate(-50%,-50%);
+	margin-left: 50%;
+}
+
+input{
+	padding: 0 20px;
+	outline: none;
+	width: 0;
+	height: 50px;
+	border-radius: 30px;
+	box-sizing: border-box;
+	transition: 0.8s;
+}
+
+.boton{
+	border: solid 2px black;
+	position: absolute;
+	right: 0;
+	top: -10px;
+	width: 70px;
+	height: 70px;
+	background-color: red;
+	border-radius: 30px;
+	line-height: 80px;
+	cursor: pointer;
+
+}
+
+.boton i{
+	font-size: 28px;
+	color: white;
+	line-height: 80px;
+}
+
+
+.container:hover input{
+	width: 250px;
+	
+}
+
+
+video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: fixed;
+}
+
+.capa{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(6px);
+	position: fixed;
+}
+
+
+.barra{
+   position: fixed;
+   color: aliceblue;
+   font-size: 40px;
+   box-shadow: 0 10px 20px rgb(2, 126, 58);
+   top: 0;
+   width: 100%;
+   border-radius: 10px;
+}
+
+details{
+	background-image: url("https://cdn.wccftech.com/wp-content/uploads/2021/07/playstation-exclusives-pc.jpg");
+	transition: 0.8s all ease-in-out;
+}
+
+details:hover{
+	color: rgb(82, 3, 3);
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	margin-right: 30px;
+	
+}
+
+a:hover{
+	color: rgb(41, 41, 7);
+}
+
+.opciones{
+	position: fixed;
+	top: 80px;
+	width: 100%;
+    
+}
+
+.hover{
+	overflow: hidden;
+    text-align:left;
+	width: 80px;
+	height: 50px;
+	background: linear-gradient(355deg, rgba(8,2,106,1) 41%, rgba(69,69,162,1) 68%, rgba(97,213,237,1) 99%);
+	border-radius: 20px;
+	margin: 10px 0 10px 0;
+	position: relative;
+	transition: all .8s ease-in-out;
+}
+
+.hover li{
+	list-style: none;
+    text-align: left;
+	color: white;
+	
+}
+
+.hover h3{
+	text-shadow: 3px 3px black;
+	text-align: center;
+	color: aqua;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hover:hover{
+	height: 250px;
+	width: 200px;
+}
+
+.hover ul li a:hover{
+	text-shadow: 3px 3px black;
+	color: white;
+	border-radius: 20px;
+	transition: all .6s ease-in-out;
+    font-size: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(https://giffiles.alphacoders.com/189/189994.gif);
+}
+
+.hover ul li .aventura:hover{
+	text-shadow: 3px 3px black;
+	color: white;
+	border-radius: 20px;
+	transition: all .6s ease-in-out;
+    font-size: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(https://giffiles.alphacoders.com/155/15546.gif);
+}
+
+.hover ul li .shooter:hover{
+	color: white;
+	border-radius: 20px;
+	transition: all .6s ease-in-out;
+    font-size: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(https://giffiles.alphacoders.com/222/222300.gif);
+}
+
+.hover ul li .terror:hover{
+	color: white;
+	border-radius: 20px;
+	transition: all .6s ease-in-out;
+    font-size: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(https://i.makeagif.com/media/2-06-2021/Usapky.gif);
+}
+
+
+.cards{
+	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-left: 40px;
+	
+}
+
+@media (max-width:600px) {
+	.cards{
+		display: grid;
+		grid-template-columns: repeat(auto-fit,
+										minmax(min(14.25rem,100%) , 1fr));
+		grid-gap: 5rem;
+		margin-left: 40px;
+	}
+
+	.container{
+		position: fixed;
+		top: 700px;
+		left: 160px;
+	}
+
+	.card1{
+		left: 60px;
+		width: 210px;
+		height: 300px;
+	
+	}
+
+	
+}
+
+.card1{
+	left: 70px;
+    top: 100px;
+	position: relative;
+	width: 250px;
+	height: 300px;
+	margin: 30px 5px 30px 5px ;
+
+}
+.card1 .face{
+	
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card1 .front{
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 10px 20px black;
+}
+.card1 .front img{
+	
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card1 .front h3{
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    height: 75px;
+    line-height: 45px;
+    color: white;
+    background: rgb(0, 0, 0, .4);
+    text-align: center;
+	align-content: center;
+    font-size: 25px;
+}
+.card1 .back{
+	
+	transform: perspective(600px) rotateY(180deg);
+	background: black;
+	padding: 15px;
+	color: white;
+	display: inline-block;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 0 5px 10px black;
+}
+.card1 .back h3{
+	font-size: 18px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+.card1 .back p{
+	font-size: 10px;
+	margin-top: 6px;
+	letter-spacing: 0px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.modelo{
+	font-size: 10px;
+	margin-top: 6px;
+	letter-spacing: 0px;
+}
+.card1 .back .link{
+	border-top: solid 1px white;
+	height: 50px;
+	line-height: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.card1 .back .link a{
+	color: white;
+
+}
+
+.card1:hover .front{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card1:hover .back{
+	transform: perspective(500px) rotateY(360deg);
+}
+
+
+
+
+
+
